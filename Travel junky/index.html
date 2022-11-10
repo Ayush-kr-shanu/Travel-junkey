@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Junky</title>
     <style>
+
         body {
             margin: 0;
             font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -862,11 +863,32 @@
             .footer_login+p {
                 display: none;
             }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            width: 100%;
+            height: auto;
+            background-color: rgb(24, 24, 71);
+        }
+        .nav-up{
+            height: 50vh;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        .nav>img {
+            width: 10%;
+
         }
     </style>
 </head>
 
 <body>
+
 <!-- nav baar starts -->
     <div id="t_nav">
         <p id="t_book">Travel-Junky</p>
@@ -1958,6 +1980,23 @@
         <div>
             <img src="https://t-cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png"
                 alt="">
+
+    <div class="nav">
+        <div class="nav-up">
+            <img src="https://media-exp1.licdn.com/dms/image/C5622AQFK252QdoBqGg/feedshare-shrink_800/0/1667894735436?e=1671062400&v=beta&t=wJFAfyqLqtJJ9-_I_86UxtdHJupFA2Fzos6uJUMf9Jc"
+                alt="">
+            <select name="" id="">
+                <option>INR</option>
+                <option>USD</option>
+                <option>EURO</option>
+            </select>
+        </div>
+        <div>
+            <button>Stays</button>
+            <button>Flights</button>
+            <button>Fligth + Hotels</button>
+            <button>Car Rentals</button>
+            <button>Airport Taxies</button>
         </div>
     </div>
 
