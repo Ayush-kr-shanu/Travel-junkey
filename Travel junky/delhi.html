@@ -1,92 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="icon" href="https://cdn.worldvectorlogo.com/logos/bookingcom-1.svg">
-    <link rel="stylesheet" 
-href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
-integrity="sha384- 
- B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
-  crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-   <style>
-        body{
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/744/744502.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384- 
+ B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
             margin: 0px;
-            font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;      
+            font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
         }
-   
-      /*------------------------------------------------------------------------------------------- Header ---------------------------------------------------------------------------------------*/
-        #t_nav{
+
+        /*------------------------------------------------------------------------------------------- Header ---------------------------------------------------------------------------------------*/
+        #t_nav {
             width: 100%;
             padding-top: 1em;
             height: 130px;
             background-color: #0f3079;
             margin-top: -20px;
         }
-        #t_book,#t_com{
+
+        #t_book,
+        #t_com {
             font-size: x-large;
             float: left;
             margin-top: 35px;
         }
-        #t_book{
-            color: white;             
-            padding-left: 200px;      
+
+        #t_book {
+            color: white;
+            padding-left: 200px;
         }
-        #t_com{
-            color: rgb(79, 149, 230);            
+
+        #t_com {
+            color: rgb(79, 149, 230);
         }
-        #t_stay{            
+
+        #t_stay {
             display: flex;
             height: 30px;
             margin: 0 14%;
         }
-        #t_stay > a {
+
+        #t_stay>a {
             flex: 1;
             margin-left: -10%;
         }
-        #t_stay>a>p,#t_ind>a>p{
+
+        #t_stay>a>p,
+        #t_ind>a>p {
             color: white;
             float: left;
             margin: 10px 20px;
         }
-        #t_ind{
-            display: flex;            
+
+        #t_ind {
+            display: flex;
             padding-left: 500px;
             margin-top: 20px;
         }
-        #t_btn1{
+
+        #t_btn1 {
             color: white;
             background-color: unset;
             border: 1px solid white;
             height: 33px;
         }
-        #t_btn2, #t_btn3{
+
+        #t_btn2,
+        #t_btn3 {
             height: 33px;
             color: rgb(17, 117, 184);
         }
-        #t_btn{
+
+        #t_btn {
             background-color: unset;
             color: white;
             border: 2px solid rgb(37, 96, 185);
             height: 50px;
         }
 
- 
+
 
         /*--------------------------------------------------------------------------- Landing Page covid info, CSS ----------------------------------------------------------------------*/
 
-        .landing_covidInfo, .landing_covidInfo_list_active {
+        .landing_covidInfo,
+        .landing_covidInfo_list_active {
             background-color: #ffe08a30;
         }
-        .landing_covidInfo > div {
+
+        .landing_covidInfo>div {
             margin: 0 14%;
             height: 100%;
         }
+
         .landing_covidInfo_list {
             width: 100%;
             height: 100%;
         }
-        .landing_covidInfo_accordion > div {
+
+        .landing_covidInfo_accordion>div {
             width: 1.5em;
             height: 1.5em;
             margin: 0 1%;
@@ -94,10 +109,11 @@ integrity="sha384-
             background-repeat: no-repeat;
             background-position: center;
         }
+
         .landing_covidInfo_accordion {
             padding: 10px 18px 0 0;
             width: 100%;
-            font-size: 15px!important;
+            font-size: 15px !important;
             font-weight: 700;
             transition: 0.4s;
             display: flex;
@@ -108,37 +124,43 @@ integrity="sha384-
             cursor: pointer;
             background-color: transparent;
         }
+
         .landing_covidInfo_accordion:hover {
             background-color: white;
         }
+
         .landing_covidInfo_panel {
             width: 100%;
-            font-size: 15px!important;
+            font-size: 15px !important;
             display: none;
             overflow: hidden;
         }
-        .landing_covidInfo_panel > a {
+
+        .landing_covidInfo_panel>a {
             text-decoration: none;
             color: #0071c2;
             font-weight: 900;
         }
-        .landing_covidInfo_panel > a:hover {
+
+        .landing_covidInfo_panel>a:hover {
             text-decoration: underline;
         }
 
 
 
 
-        #t_goa_float{
+        #t_goa_float {
             margin-top: -8%;
             float: left;
         }
-        #t_goa_top{
+
+        #t_goa_top {
             display: flex;
             margin: 20px;
             border-radius: 5px;
         }
-        .goaTop{
+
+        .goaTop {
             border: 1px solid #0071c2;
             height: 20px;
             padding: 7px;
@@ -147,36 +169,45 @@ integrity="sha384-
             text-align: center;
             color: #0071c2;
         }
-        #t_goa_itc1{
-            float: left; 
+
+        #t_goa_itc1 {
+            float: left;
             margin: 20px;
         }
-        #t_goa_itc_img{
+
+        #t_goa_itc_img {
             float: left;
             margin: 20px
         }
-        #t_goa_good{    
+
+        #t_goa_good {
             padding: 20px;
         }
-        #t_goa_good1{
+
+        #t_goa_good1 {
             height: 30px;
-            background-color:rgb(9, 71, 243) ;
+            background-color: rgb(9, 71, 243);
             color: white;
             border: unset;
         }
-        #t_goa_itc{
-            margin: 20px 20px; 
+
+        #t_goa_itc {
+            margin: 20px 20px;
             width: 940px;
             height: 250px;
             border: 1px solid#c6c6c6;
         }
-        #t_goa_itc1>h2{
+
+        #t_goa_itc1>h2 {
             color: #0071c2;
         }
-        .fa-star,.fa-thumbs-up{
+
+        .fa-star,
+        .fa-thumbs-up {
             color: yellow;
         }
-        #t_goa_good>button{
+
+        #t_goa_good>button {
             height: 25px;
             margin-top: 20px;
             margin-bottom: -40px;
@@ -184,14 +215,17 @@ integrity="sha384-
             color: white;
             background-color: rgb(8, 58, 223);
         }
-        #t_goa_top1{
+
+        #t_goa_top1 {
             background-color: rgb(4, 117, 4);
-            color: white;    
+            color: white;
         }
-        #t_goa_book{
+
+        #t_goa_book {
             color: rgb(240, 11, 11);
         }
-        #t_goa_sea{
+
+        #t_goa_sea {
             float: left;
             width: 200px;
             border-radius: 5px;
@@ -202,30 +236,36 @@ integrity="sha384-
             padding: 20px;
             line-height: 0;
         }
+
         #t_goa_sea p {
             font-size: 13px;
         }
+
         #t_goa_sea input {
             width: 100%;
             border-radius: 3px;
         }
+
         #t_goa_sea button {
             width: 100%;
             height: 45px;
             font-size: 17px;
             border-radius: 3px;
-            color:white;
-            border: unset;  
+            color: white;
+            border: unset;
             cursor: pointer;
             background-color: #0071c2;
         }
+
         #t_goa_sea button:hover {
             background-color: #0f3079;
         }
-        #t_goa>h1{
+
+        #t_goa>h1 {
             margin: 20px;
         }
-        #t_goa_good>button{
+
+        #t_goa_good>button {
             border-bottom-right-radius: 8px;
             border-top-right-radius: 8px;
             border-top-left-radius: 8px;
@@ -237,43 +277,52 @@ integrity="sha384-
             text-align: center;
             line-height: 10px;
         }
-        #footer > div:nth-child(1) {
+
+        #footer>div:nth-child(1) {
             height: 60%;
             padding: 2% 0 0;
             color: white;
             background-color: #00224f;
         }
-        #footer > div:nth-child(1) > div {
-            font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+
+        #footer>div:nth-child(1)>div {
+            font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
         }
-        #footer > div:nth-child(1) h3 {
+
+        #footer>div:nth-child(1) h3 {
             color: #bdbdbd;
         }
+
         .footer_checkbox {
             display: flex;
             margin: 0.4% 30.5% 0;
         }
-        .footer_checkbox > input {
+
+        .footer_checkbox>input {
             margin-top: -0.1em;
         }
+
         .subscription_form {
             height: 3em;
             margin: 2% 30% 0;
             display: flex;
         }
-        .subscription_form > div {
+
+        .subscription_form>div {
             width: 70%;
             height: 86%;
             padding: 0 1.5%;
         }
-        .subscription_form > div > input {
+
+        .subscription_form>div>input {
             width: 100%;
             height: 100%;
             font-size: 20px;
             border-radius: 4px;
             border: 1px solid black;
         }
-        .subscription_form > button {
+
+        .subscription_form>button {
             width: 25%;
             height: 95%;
             font-size: 20px;
@@ -283,79 +332,100 @@ integrity="sha384-
             border-radius: 4px;
             background-color: #0071c2;
         }
+
         .footer_bottom {
             height: 20%;
             padding: 1em 0;
             background-color: #003580;
         }
-        .footer_bottom > div:nth-child(1) {
+
+        .footer_bottom>div:nth-child(1) {
             padding: 6px 0 10px;
         }
-        .footer_bottom >div:nth-child(1) > a {
+
+        .footer_bottom>div:nth-child(1)>a {
             border: 1px solid white;
             color: white;
             padding: 5px 10px;
             border-radius: 5px;
             text-decoration: none;
         }
-        .footer_bottom > div:nth-child(1) > a:hover {
+
+        .footer_bottom>div:nth-child(1)>a:hover {
             background-color: #4a7ec780;
         }
-        .footer_bottom > div:nth-child(3) > a {
+
+        .footer_bottom>div:nth-child(3)>a {
             color: white;
             margin: 0 0.5%;
             font-size: 13px;
             font-weight: bold;
             padding: 15px 10px;
         }
+
         #footer_lists {
             margin: 0 12%;
             display: flex;
         }
-        #footer_lists > div {
+
+        #footer_lists>div {
             flex: 1;
         }
-        #footer_lists > div > ul {
+
+        #footer_lists>div>ul {
             list-style: none;
             font-size: 14px;
             line-height: 1.6em;
         }
+
         #footer_lists a {
             text-decoration: none;
             color: #0071c2;
         }
-        #footer_lists a:hover, .footer_quote a:hover, .footer_login a:hover {
+
+        #footer_lists a:hover,
+        .footer_quote a:hover,
+        .footer_login a:hover {
             color: rgb(221, 103, 19);
         }
-        .footer_quote, .footer_copyright, .footer_priceline_title {
+
+        .footer_quote,
+        .footer_copyright,
+        .footer_priceline_title {
             margin: 0 15%;
-            font-size: 12px!important;
-            font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-size: 12px !important;
+            font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
         }
+
         .footer_quote a {
             color: #0071c2;
             font-weight: 700;
             text-decoration: none;
         }
+
         .footer_login {
             text-align: center;
         }
-        .footer_login > a {
+
+        .footer_login>a {
             text-decoration: none;
             color: #333;
             opacity: 80%;
             font-size: 14.5px;
             font-weight: 700;
         }
+
         .footer_priceline_title {
             text-align: center;
         }
+
         .footer_priceline_images {
             display: flex;
             justify-content: center;
             margin-bottom: 1.5em;
         }
-        .footer_priceline_images > div {
+
+        .footer_priceline_images>div {
             margin-right: 2.5em;
         }
 
@@ -364,52 +434,62 @@ integrity="sha384-
             body {
                 margin: 0;
             }
+
             #footer {
                 width: 100%;
                 height: 16em;
                 text-align: center;
                 line-height: 10px;
             }
-            #footer > div:nth-child(1) {
+
+            #footer>div:nth-child(1) {
                 height: 60%;
                 padding: 2% 0 0;
                 color: white;
                 background-color: #00224f;
             }
-            #footer > div:nth-child(1) > div {
+
+            #footer>div:nth-child(1)>div {
                 font-size: 14px;
-                font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+                font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
             }
-            #footer > div:nth-child(1) h3 {
+
+            #footer>div:nth-child(1) h3 {
                 color: #bdbdbd;
             }
+
             .footer_checkbox {
                 width: 50%;
                 font-size: 10px;
                 display: flex;
             }
-            .footer_checkbox > input {
+
+            .footer_checkbox>input {
                 width: 0.8em;
                 height: 0.8em;
             }
+
             .subscription_form {
                 width: 50%;
                 height: 2.5em;
                 margin-left: 10em;
                 display: flex;
             }
-            .subscription_form > div {
+
+            .subscription_form>div {
                 width: 60%;
                 height: 86%;
             }
-            .subscription_form > div > input {
+
+            .subscription_form>div>input {
                 width: 100%;
                 height: 100%;
                 font-size: 13px;
                 border-radius: 4px;
                 border: 1px solid black;
             }
-            .subscription_form > button {
+
+            .subscription_form>button {
                 width: 35%;
                 height: 95%;
                 margin-left: 0.25em;
@@ -420,589 +500,688 @@ integrity="sha384-
                 border-radius: 4px;
                 background-color: #0071c2;
             }
-            .footer_bottom >div:nth-child(1) > a {
+
+            .footer_bottom>div:nth-child(1)>a {
                 border: 1px solid white;
                 color: white;
                 padding: 5px 10px;
                 border-radius: 5px;
                 text-decoration: none;
             }
-            .footer_bottom > div:nth-child(1) > a:hover {
+
+            .footer_bottom>div:nth-child(1)>a:hover {
                 background-color: #4a7ec780;
             }
-            .footer_bottom > div:nth-child(3) > a {
+
+            .footer_bottom>div:nth-child(3)>a {
                 color: white;
                 font-size: 8px;
                 font-weight: bold;
                 padding: 0;
             }
+
             #footer_lists {
                 margin: 2% 0 0;
                 display: flex;
             }
-            #footer_lists > div {
+
+            #footer_lists>div {
                 flex: 1;
             }
-            #footer_lists > div > ul {
+
+            #footer_lists>div>ul {
                 list-style: none;
                 padding-left: 10px;
                 font-size: 8px;
                 line-height: 1.8em;
             }
+
             #footer_lists a {
                 text-decoration: none;
                 color: #0071c2;
             }
-            #footer_lists a:hover, .footer_quote a:hover, .footer_login a:hover {
+
+            #footer_lists a:hover,
+            .footer_quote a:hover,
+            .footer_login a:hover {
                 color: rgb(221, 103, 19);
             }
+
             .footer_quote {
                 margin: 0 3%;
-                font-size: 11px!important;
-                font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+                font-size: 11px !important;
+                font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
             }
+
             .footer_quote a {
                 color: #0071c2;
                 font-weight: 700;
                 text-decoration: none;
             }
+
             .footer_login {
                 text-align: center;
             }
-            .footer_login > a {
+
+            .footer_login>a {
                 text-decoration: none;
                 color: #333;
                 opacity: 80%;
                 font-size: 14.5px;
                 font-weight: 700;
             }
+
             .footer_copyright {
-                font-size: 6px!important;
+                font-size: 6px !important;
             }
+
             .footer_copyright p {
                 margin-left: -18%;
             }
+
             .footer_priceline_title {
                 text-align: center;
                 width: 100%;
                 margin-left: 0;
             }
-            .footer_priceline_title > div {
+
+            .footer_priceline_title>div {
                 font-size: 12px;
             }
+
             .footer_priceline_images {
                 display: flex;
                 justify-content: center;
                 margin-bottom: 1.5em;
             }
-            .footer_priceline_images > div {
+
+            .footer_priceline_images>div {
                 margin: 0 0 0 3%;
             }
+
             .footer_priceline_images img {
                 width: 70%;
             }
-            .footer_quote+p, .footer_login+p {
+
+            .footer_quote+p,
+            .footer_login+p {
                 display: none;
             }
         }
-   </style>
+    </style>
 </head>
+
 <body>
- 
+
     <div id="t_nav">
-        <p  id ="t_book">Booking</p><p id="t_com">.com</p>
-    
+        <p id="t_book">Booking</p>
+        <p id="t_com">.com</p>
+
         <div id="t_ind">
-            <a href=""><p><button id="t_btn">INR</button></p></a>
-            <a href=""><p><img style="border-radius: 15px; height: 30px;width: 30px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8lg2a4Ybaz-QLxvyQ4Kkf6_1qW-1IJiQw_A&usqp=CAU"/></p></a>
-            <a href=""><p > <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZqzASc53BkgBk3ortSJQOdwZkgvB68N3N6A&usqp=CAU" style="border: 1px solid white;border-radius: 20px; height: 30px; width: 30px;  "/> </p></a>
-            <a href=""><p><button id="t_btn1">List your property</button></p></a>
-            <a href=""><p><button id="t_btn2">Register</button></p></a>
-            <a href=""><p><button id="t_btn2">Sing in</button></p></a>
-    
+            <a href="">
+                <p><button id="t_btn">INR</button></p>
+            </a>
+            <a href="">
+                <p><img style="border-radius: 15px; height: 30px;width: 30px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8lg2a4Ybaz-QLxvyQ4Kkf6_1qW-1IJiQw_A&usqp=CAU" />
+                </p>
+            </a>
+            <a href="">
+                <p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZqzASc53BkgBk3ortSJQOdwZkgvB68N3N6A&usqp=CAU"
+                        style="border: 1px solid white;border-radius: 20px; height: 30px; width: 30px;  " /> </p>
+            </a>
+            <a href="">
+                <p><button id="t_btn1">List your property</button></p>
+            </a>
+            <a href="">
+                <p><button id="t_btn2">Register</button></p>
+            </a>
+            <a href="">
+                <p><button id="t_btn2">Sing in</button></p>
+            </a>
+
         </div>
         <div id="t_stay">
-            <a href="./mainLandingPage.html"><p> <i class="fa fa-hotel"> Stays </i></p></a>
-            <a href=""><p> <i class="fa fa-plane"> Flights </i> </p></a>
-            <a href=""><p> <i class="fa fa-hotel"> Flight+Hotel </i></p></a>
-            <a href="../carRental/carRental.html"><p><i class="fa fa-bus"> Car rentals </i></p></a>
-            <a href=""><p> <i class="fa fa-map"> Attractions </i></p></a>
-            <a href="../AirPort_Taxi/book_airport_taxi.html"><p> <i class="fa fa-taxi"> Airport taxis </i></p></a>
-           
+            <a href="./mainLandingPage.html">
+                <p> <i class="fa fa-hotel"> Stays </i></p>
+            </a>
+            <a href="">
+                <p> <i class="fa fa-plane"> Flights </i> </p>
+            </a>
+            <a href="">
+                <p> <i class="fa fa-hotel"> Flight+Hotel </i></p>
+            </a>
+            <a href="../carRental/carRental.html">
+                <p><i class="fa fa-bus"> Car rentals </i></p>
+            </a>
+            <a href="">
+                <p> <i class="fa fa-map"> Attractions </i></p>
+            </a>
+            <a href="../AirPort_Taxi/book_airport_taxi.html">
+                <p> <i class="fa fa-taxi"> Airport taxis </i></p>
+            </a>
+
         </div>
-       
+
     </div>
 
 
     <!---------------------------------------------------------------------------------- Landing Page covid info ---------------------------------------------------------------->
-    
+
     <div class="landing_covidInfo">
         <div>
             <div class="landing_covidInfo_list">
                 <button class="landing_covidInfo_accordion">
-                    <div style="background-image: url(https://www.flaticon.com/svg/vstatic/svg/1/1176.svg?token=exp=1615451895~hmac=7b1448372d94a11260bc4e6935ede1d8);"></div>
+                    <div
+                        style="background-image: url(https://www.flaticon.com/svg/vstatic/svg/1/1176.svg?token=exp=1615451895~hmac=7b1448372d94a11260bc4e6935ede1d8);">
+                    </div>
                     <h3 style="margin-top: 0;">Coronavirus (COVID-19) Support</h3>
                 </button>
                 <div class="landing_covidInfo_panel">
-                    <p style="margin: 0 15% 0 1%;">Please check for travel restrictions. Travel may be permitted only for certain purposes and in particular, touristic travel may not be allowed.</p>
-                    <a href=""><h4 style="margin-left: 1%;">Read more</h4></a>
+                    <p style="margin: 0 15% 0 1%;">Please check for travel restrictions. Travel may be permitted only
+                        for certain purposes and in particular, touristic travel may not be allowed.</p>
+                    <a href="">
+                        <h4 style="margin-left: 1%;">Read more</h4>
+                    </a>
                 </div>
-            </div>  
+            </div>
         </div>
     </div>
 
-<div style="height: 100px;">
-  <div id="t_goa_input">
-      
-  </div>
-</div> 
+    <div style="height: 100px;">
+        <div id="t_goa_input">
+
+        </div>
+    </div>
 
 
     <div id="t_goa_sea">
-        <h3>Search</h3><p>Destination/property name:</p>
+        <h3>Search</h3>
+        <p>Destination/property name:</p>
         <span style="position: absolute;margin-left: 5px;margin-top: 5px;"><i class="fa fa-search"></i></span>
-<<<<<<< HEAD
-        <input type="text"  placeholder="Delhi"style="height:29px;border:none;text-align:center" id="t_goa55">
-        <p>Check-in date</p>
-=======
-        <input type="text"  placeholder="Search City"style="height:29px;border:none;text-align:center" id="t_goa55">
-    <p>check in Date</p>
->>>>>>> a59a239ab99cef8121cd426f5631e1d4de679061
-        <input type="datetime-local"style="height:29px;border:none">
-        <p>Check-out date</p>
-        <input type="datetime-local"style="height:29px;border:none">
-        <p></p>
-        <input type="number" placeholder="2 adult" style="height:29px;border:none">
-        <p></p>
-        <input type="number" placeholder="No children" style="height:29px;border:none;width: 80px;">
-        
-        <input type="number" placeholder="1 room" style="height:29px;border:none;width: 80px;">
-        <p></p>
-        <button onclick="search()">Search</button>
+        <input type="text" placeholder="Delhi" style="height:29px;border:none;text-align:center"
+            id="t_goa55">
+            <p>Check-in date</p>
+            
+            <input type="text" placeholder="Search City" style="height:29px;border:none;text-align:center" id="t_goa55">
+            <p>check in Date</p>
+            <input type="datetime-local" style="height:29px;border:none">
+            <p>Check-out date</p>
+            <input type="datetime-local" style="height:29px;border:none">
+            <p></p>
+            <input type="number" placeholder="2 adult" style="height:29px;border:none">
+            <p></p>
+            <input type="number" placeholder="No children" style="height:29px;border:none;width: 80px;">
+
+            <input type="number" placeholder="1 room" style="height:29px;border:none;width: 80px;">
+            <p></p>
+            <button onclick="search()">Search</button>
     </div>
     <div id="t_goa_float">
-    <div id="t_goa" style="color: #333;" ><h1>Delhi: 1,816 properties found </h1></div>
-     <div id="t_goa_top" >
-        <div id="t_goa_top1" class="goaTop" style="background: #0071c2;" >Top picks for solo travellers</div>
-        <div id="t_goa_top2" class="goaTop">Entire homes & apartments </div>
-        <div style="cursor: pointer;" id="t_goa_top3" class="goaTop" onclick="highest()">Stars (highest first)</div>
-        <div style="cursor: pointer;"  id="t_goa_top4" class="goaTop" onclick="lowest()">Stars (lowest first)</div>
-        <div style="cursor: pointer;"  id="t_goa_top5" class="goaTop" onclick="reviews()">Top Reviewed</div>
-     </div>
-      <div id="t_dom1"></div>
-     <div id="t_goa_itc" class="t_dom1">
-         <img id="t_goa_itc_img" src="https://t-cf.bstatic.com/xdata/images/hotel/square200/127254291.webp?k=b2574fcaf6369d4044b421f16ccdc9d4f070a2e01d8e98b12afbafbab99139ca&o="/>
-        <div id="t_goa_itc1">
-            <h2>Novotel  Delhi, a Luxury Collection Resort & <br> Spa <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
-        <p>ITC Grand Delhi Resort & Spa is set within 45 acres of landscaped gardens with <br> glimmering waterways and lagoons along the pristine Arossim Beach.</p>
-        <p id="t_goa_book">Book 6 times in last 6 hours</p>
+        <div id="t_goa" style="color: #333;">
+            <h1>Delhi: 1,816 properties found </h1>
         </div>
-        <div id="t_goa_good">
-            <button>8.4</button><h3 >Very good</h3>
-           <p style="margin-top: -10px;"> 486 reviews</p>
-           <button id="t_goa_good1"> Show prices</button>
+        <div id="t_goa_top">
+            <div id="t_goa_top1" class="goaTop" style="background: #0071c2;">Top picks for solo travellers</div>
+            <div id="t_goa_top2" class="goaTop">Entire homes & apartments </div>
+            <div style="cursor: pointer;" id="t_goa_top3" class="goaTop" onclick="highest()">Stars (highest first)</div>
+            <div style="cursor: pointer;" id="t_goa_top4" class="goaTop" onclick="lowest()">Stars (lowest first)</div>
+            <div style="cursor: pointer;" id="t_goa_top5" class="goaTop" onclick="reviews()">Top Reviewed</div>
         </div>
-    </div>
-
-    <div id="t_goa_itc" class="t_dom2">
-        <img id="t_goa_itc_img" src="https://t-cf.bstatic.com/xdata/images/hotel/square200/36573971.webp?k=6be1b3bf57628f82ceb3ab04b7221e2d0675b8d6d66c9e09363990a8850cc952&o="/>
-       <div id="t_goa_itc1">
-           <h2>Grand Hyatt Delhi <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
-       <p>Set in heart of Delhi offering sweeping views of Bambolim Bay,  Grand Hyatt<br>guests with a 25-yard outdoor pool, indoor lap pool and 7 dining options.</p>
-       <p id="t_goa_book">Book 7 times in last 3 hours</p>
-       </div>
-       <div id="t_goa_good">
-           <button>8.8</button><h3 >Very good</h3>
-          <p style="margin-top: -10px;"> 786 reviews</p>
-          <button id="t_goa_good1"> Show prices</button>
-       </div>
-   </div>
-
-   <div id="t_goa_itc" class="t_dom3">
-    <img id="t_goa_itc_img" src="https://t-cf.bstatic.com/xdata/images/hotel/square200/252170048.webp?k=09301b21bd7b2516b1768dc1e5a7c9367466334704e9913776e9ee589bd3a958&o="/>
-   <div id="t_goa_itc1">
-       <h2>Fairfield by Marriott Delhi NCR <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
-   <p>Fairfield by Marriott Delhi Anjuna is located in Anjuna in the Delhi Region.<br> The property offers complimentary shuttle service to Anjuna<br> beaches five times a day.</p>
-   <p id="t_goa_book">Book 12 times in last 12 hours</p>
-   </div>
-   <div id="t_goa_good">
-       <button>8.1</button><h3 >Very good</h3>
-      <p style="margin-top: -10px;"> 356 reviews</p>
-      <button id="t_goa_good1"> Show prices</button>
-   </div>
-</div>
-
-<div id="t_goa_itc" class="t_dom4">
-    <img id="t_goa_itc_img" src="https://t-cf.bstatic.com/xdata/images/hotel/square200/252154916.webp?k=df43a62dd165f10dce571778a6134907f8aff33b83a9bcd1de51457e64da2da1&o="/>
-   <div id="t_goa_itc1">
-       <h2>Taj Exotica Resort & Spa, Delhi <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
-   <p>Spread across 56 acres of landscaped gardens, the Mediterranean-style<br> Taj Exotica Resort & Spa, Delhi sits along a private beach overlooking <br>the Arabian Sea.</p>
-   <p id="t_goa_book">Book 14 times in last 6 hours</p>
-   </div>
-   <div id="t_goa_good">
-       <button>9.2</button><h3 >Excellent</h3>
-      <p style="margin-top: -10px;"> 986 reviews</p>
-      <button id="t_goa_good1"> Show prices</button>
-   </div>
-</div>
-
-<div id="t_goa_itc" class="t_dom5">
-    <img id="t_goa_itc_img" src="https://t-cf.bstatic.com/xdata/images/hotel/square200/27712238.webp?k=2f889f8ba299dd22d520af359921098124b9eb536fe67cc0e8f63f2ccb83aa26&o="/>
-   <div id="t_goa_itc1">
-       <h2>Caravela Beach Resort Delhi<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
-   <p>Located on Varca beach, Caravela Beach Resort Delhi offers beachfront <br>accommodations with private balconies.</p>
-   <p id="t_goa_book">Book 9 times in last 4 hours</p>
-   </div>
-   <div id="t_goa_good">
-       <button>8.3</button><h3 >Very good</h3>
-      <p style="margin-top: -10px;"> 258 reviews</p>
-      <button id="t_goa_good1"> Show prices</button>
-   </div>
-</div>
-
-<div id="t_goa_itc" class="t_dom6">
-    <img id="t_goa_itc_img" src="https://t-cf.bstatic.com/xdata/images/hotel/square200/27858381.webp?k=8bd653dfcc34bb6c1453413e487bf1902eccd55e6ec9922ecfa649f74443a3d9&o="/>
-   <div id="t_goa_itc1">
-       <h2>JW Marriott Delhi <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
-   <p>Offering a spa center and sauna and 24-hour concierge service, W Delhi is <br>set in Vagator. Guests can enjoy the outdoor swimming pool or grab<br> a drink at the WooBar.</p>
-   <p id="t_goa_book">Book 9 times in last 6 hours</p>
-   </div>
-   <div id="t_goa_good">
-       <button>8.5</button><h3 >Very good</h3>
-      <p style="margin-top: -10px;"> 652 reviews</p>
-      <button id="t_goa_good1"> Show prices</button>
-   </div>
-</div>
-
-<div id="t_goa_itc" class="t_dom7">
-    <img id="t_goa_itc_img" src="https://t-cf.bstatic.com/xdata/images/hotel/square200/286811188.webp?k=146b6e1e041f0c6fd6652e0ca20008da8ba6d8c8ed2691212ee1f06e9126f776&o="/>
-   <div id="t_goa_itc1">
-       <h2>Hyatt Centric Candolim Delhi  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
-   <p>Hyatt Centric Candolim Delhi is set in Candolim in the Delhi Region, 1 mi<br> from Calangute. Guests can enjoy the on-site bar and signature restaurant <br>GROK that offers comfortable indoor</p>
-   <p id="t_goa_book">Book 11 times in last 6 hours</p>
-   </div>
-   <div id="t_goa_good">
-       <button>8.8</button><h3 >Very good</h3>
-      <p style="margin-top: -10px;"> 759 reviews</p>
-      <button id="t_goa_good1"> Show prices</button>
-   </div>
-</div>
-
-<div id="t_goa_itc" class="t_dom8">
-    <img id="t_goa_itc_img" src="https://t-cf.bstatic.com/xdata/images/hotel/square200/268437803.webp?k=05a0537b520a11e881dfb29ea6a4300f2475023df9e5215728c00e27bb3d40b7&o="/>
-   <div id="t_goa_itc1">
-       <h2>The Leela Resort <br>Delhi <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
-   <p>Offering an outdoor swimming pool and a fitness center, Planet Hollywood <br>Beach Resort Delhi is located on the Uttorda Beach.</p>
-   <p id="t_goa_book">Book 13 times in last 8 hours</p>
-   </div>
-   <div id="t_goa_good">
-       <button>8.6</button><h3 >Very good</h3>
-      <p style="margin-top: -10px;"> 359 reviews</p>
-      <button id="t_goa_good1"> Show prices</button>
-   </div>
-</div>
-
-<div id="t_goa_itc" class="t_dom9">
-    <img id="t_goa_itc_img" src="https://t-cf.bstatic.com/xdata/images/hotel/square200/252170048.webp?k=09301b21bd7b2516b1768dc1e5a7c9367466334704e9913776e9ee589bd3a958&o="/>
-   <div id="t_goa_itc1">
-       <h2>Pullman New Delhi <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
-   <p>The Heritage Village Resort & Spa Delhi is nestled along the pristine white <br>sands of Arossim Beach.The property features a traditional Indian spa.</p>
-   <p id="t_goa_book">Book 3 times in last 12 hours</p>
-   </div>
-   <div id="t_goa_good">
-       <button>8.0</button><h3 >Very good</h3>
-      <p style="margin-top: -10px;"> 196 reviews</p>
-      <button id="t_goa_good1"> Show prices</button>
-   </div>
-</div>
-
-<div id="t_goa_itc" class="t_dom10">
-    <img id="t_goa_itc_img" src="https://t-cf.bstatic.com/xdata/images/hotel/square200/234890162.webp?k=9851b545831e5e33fb3df6bc05f843bb0575d31ea421873dea895c2848e2a61d&o="/>
-   <div id="t_goa_itc1">
-       <h2>Holiday Inn Delhi <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
-   <p>Spread across 56 acres of landscaped gardens, the Mediterranean-style<br> Taj Exotica Resort & Spa, Delhi sits along a private beach overlooking <br>the Arabian Sea.</p>
-   <p id="t_goa_book">Book 14 times in last 6 hours</p>
-   </div>
-   <div id="t_goa_good">
-       <button>9.2</button><h3 >Excellent</h3>
-      <p style="margin-top: -10px;"> 496 reviews</p>
-      <button id="t_goa_good1"> Show prices</button>
-   </div>
-</div>
-
-</div>
-
-<div style="height: 3000px;"></div>
-
-<div id="footer">
-    <div>
-        <div>
-            <h2>Save time, save money!</h2>
-            <h3>Sign up and we'll send the best deals to you</h3>
-        </div>
-        <div class="subscription_form">
-            <div>
-                <input type="email" placeholder="Your email">
+        <div id="t_dom1"></div>
+        <div id="t_goa_itc" class="t_dom1">
+            <img id="t_goa_itc_img"
+                src="https://t-cf.bstatic.com/xdata/images/hotel/square200/127254291.webp?k=b2574fcaf6369d4044b421f16ccdc9d4f070a2e01d8e98b12afbafbab99139ca&o=" />
+            <div id="t_goa_itc1">
+                <h2>Novotel Delhi, a Luxury Collection Resort & <br> Spa <i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
+                <p>ITC Grand Delhi Resort & Spa is set within 45 acres of landscaped gardens with <br> glimmering
+                    waterways and lagoons along the pristine Arossim Beach.</p>
+                <p id="t_goa_book">Book 6 times in last 6 hours</p>
             </div>
-            <button>Subscribe</button>
+            <div id="t_goa_good">
+                <button>8.4</button>
+                <h3>Very good</h3>
+                <p style="margin-top: -10px;"> 486 reviews</p>
+                <button id="t_goa_good1"> Show prices</button>
+            </div>
         </div>
-        <label class="footer_checkbox">
-            <input type="checkbox">
-            Send me a link to get the FREE Booking.com app!
-        </label>
+
+        <div id="t_goa_itc" class="t_dom2">
+            <img id="t_goa_itc_img"
+                src="data:image/jpeg;base64,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" />
+            <div id="t_goa_itc1">
+                <h2>Grand Hyatt Delhi <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
+                <p>Set in heart of Delhi offering sweeping views of Bambolim Bay, Grand Hyatt<br>guests with a 25-yard
+                    outdoor pool, indoor lap pool and 7 dining options.</p>
+                <p id="t_goa_book">Book 7 times in last 3 hours</p>
+            </div>
+            <div id="t_goa_good">
+                <button>8.8</button>
+                <h3>Very good</h3>
+                <p style="margin-top: -10px;"> 786 reviews</p>
+                <button id="t_goa_good1"> Show prices</button>
+            </div>
+        </div>
+
+        <div id="t_goa_itc" class="t_dom3">
+            <img id="t_goa_itc_img"
+                src="https://t-cf.bstatic.com/xdata/images/hotel/square200/252170048.webp?k=09301b21bd7b2516b1768dc1e5a7c9367466334704e9913776e9ee589bd3a958&o=" />
+            <div id="t_goa_itc1">
+                <h2>Fairfield by Marriott Delhi NCR <i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-thumbs-up"></i></h2>
+                <p>Fairfield by Marriott Delhi Anjuna is located in Anjuna in the Delhi Region.<br> The property offers
+                    complimentary shuttle service to Anjuna<br> beaches five times a day.</p>
+                <p id="t_goa_book">Book 12 times in last 12 hours</p>
+            </div>
+            <div id="t_goa_good">
+                <button>8.1</button>
+                <h3>Very good</h3>
+                <p style="margin-top: -10px;"> 356 reviews</p>
+                <button id="t_goa_good1"> Show prices</button>
+            </div>
+        </div>
+
+        <div id="t_goa_itc" class="t_dom4">
+            <img id="t_goa_itc_img"
+                src="https://t-cf.bstatic.com/xdata/images/hotel/square200/252154916.webp?k=df43a62dd165f10dce571778a6134907f8aff33b83a9bcd1de51457e64da2da1&o=" />
+            <div id="t_goa_itc1">
+                <h2>Taj Exotica Resort & Spa, Delhi <i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-thumbs-up"></i></h2>
+                <p>Spread across 56 acres of landscaped gardens, the Mediterranean-style<br> Taj Exotica Resort & Spa,
+                    Delhi sits along a private beach overlooking <br>the Arabian Sea.</p>
+                <p id="t_goa_book">Book 14 times in last 6 hours</p>
+            </div>
+            <div id="t_goa_good">
+                <button>9.2</button>
+                <h3>Excellent</h3>
+                <p style="margin-top: -10px;"> 986 reviews</p>
+                <button id="t_goa_good1"> Show prices</button>
+            </div>
+        </div>
+
+        <div id="t_goa_itc" class="t_dom5">
+            <img id="t_goa_itc_img"
+                src="https://t-cf.bstatic.com/xdata/images/hotel/square200/27712238.webp?k=2f889f8ba299dd22d520af359921098124b9eb536fe67cc0e8f63f2ccb83aa26&o=" />
+            <div id="t_goa_itc1">
+                <h2>Caravela Beach Resort Delhi<i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
+                <p>Located on Varca beach, Caravela Beach Resort Delhi offers beachfront <br>accommodations with private
+                    balconies.</p>
+                <p id="t_goa_book">Book 9 times in last 4 hours</p>
+            </div>
+            <div id="t_goa_good">
+                <button>8.3</button>
+                <h3>Very good</h3>
+                <p style="margin-top: -10px;"> 258 reviews</p>
+                <button id="t_goa_good1"> Show prices</button>
+            </div>
+        </div>
+
+        <div id="t_goa_itc" class="t_dom6">
+            <img id="t_goa_itc_img"
+                src="https://t-cf.bstatic.com/xdata/images/hotel/square200/27858381.webp?k=8bd653dfcc34bb6c1453413e487bf1902eccd55e6ec9922ecfa649f74443a3d9&o=" />
+            <div id="t_goa_itc1">
+                <h2>JW Marriott Delhi <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
+                <p>Offering a spa center and sauna and 24-hour concierge service, W Delhi is <br>set in Vagator. Guests
+                    can enjoy the outdoor swimming pool or grab<br> a drink at the WooBar.</p>
+                <p id="t_goa_book">Book 9 times in last 6 hours</p>
+            </div>
+            <div id="t_goa_good">
+                <button>8.5</button>
+                <h3>Very good</h3>
+                <p style="margin-top: -10px;"> 652 reviews</p>
+                <button id="t_goa_good1"> Show prices</button>
+            </div>
+        </div>
+
+        <div id="t_goa_itc" class="t_dom7">
+            <img id="t_goa_itc_img"
+                src="https://t-cf.bstatic.com/xdata/images/hotel/square200/286811188.webp?k=146b6e1e041f0c6fd6652e0ca20008da8ba6d8c8ed2691212ee1f06e9126f776&o=" />
+            <div id="t_goa_itc1">
+                <h2>Hyatt Centric Candolim Delhi <i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-thumbs-up"></i></h2>
+                <p>Hyatt Centric Candolim Delhi is set in Candolim in the Delhi Region, 1 mi<br> from Calangute. Guests
+                    can enjoy the on-site bar and signature restaurant <br>GROK that offers comfortable indoor</p>
+                <p id="t_goa_book">Book 11 times in last 6 hours</p>
+            </div>
+            <div id="t_goa_good">
+                <button>8.8</button>
+                <h3>Very good</h3>
+                <p style="margin-top: -10px;"> 759 reviews</p>
+                <button id="t_goa_good1"> Show prices</button>
+            </div>
+        </div>
+
+        <div id="t_goa_itc" class="t_dom8">
+            <img id="t_goa_itc_img"
+                src="https://t-cf.bstatic.com/xdata/images/hotel/square200/268437803.webp?k=05a0537b520a11e881dfb29ea6a4300f2475023df9e5215728c00e27bb3d40b7&o=" />
+            <div id="t_goa_itc1">
+                <h2>The Leela Resort <br>Delhi <i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-thumbs-up"></i></h2>
+                <p>Offering an outdoor swimming pool and a fitness center, Planet Hollywood <br>Beach Resort Delhi is
+                    located on the Uttorda Beach.</p>
+                <p id="t_goa_book">Book 13 times in last 8 hours</p>
+            </div>
+            <div id="t_goa_good">
+                <button>8.6</button>
+                <h3>Very good</h3>
+                <p style="margin-top: -10px;"> 359 reviews</p>
+                <button id="t_goa_good1"> Show prices</button>
+            </div>
+        </div>
+
+        <div id="t_goa_itc" class="t_dom9">
+            <img id="t_goa_itc_img"
+                src="https://t-cf.bstatic.com/xdata/images/hotel/square200/252170048.webp?k=09301b21bd7b2516b1768dc1e5a7c9367466334704e9913776e9ee589bd3a958&o=" />
+            <div id="t_goa_itc1">
+                <h2>Pullman New Delhi <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
+                <p>The Heritage Village Resort & Spa Delhi is nestled along the pristine white <br>sands of Arossim
+                    Beach.The property features a traditional Indian spa.</p>
+                <p id="t_goa_book">Book 3 times in last 12 hours</p>
+            </div>
+            <div id="t_goa_good">
+                <button>8.0</button>
+                <h3>Very good</h3>
+                <p style="margin-top: -10px;"> 196 reviews</p>
+                <button id="t_goa_good1"> Show prices</button>
+            </div>
+        </div>
+
+        <div id="t_goa_itc" class="t_dom10">
+            <img id="t_goa_itc_img"
+                src="https://t-cf.bstatic.com/xdata/images/hotel/square200/234890162.webp?k=9851b545831e5e33fb3df6bc05f843bb0575d31ea421873dea895c2848e2a61d&o=" />
+            <div id="t_goa_itc1">
+                <h2>Holiday Inn Delhi <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
+                <p>Spread across 56 acres of landscaped gardens, the Mediterranean-style<br> Taj Exotica Resort & Spa,
+                    Delhi sits along a private beach overlooking <br>the Arabian Sea.</p>
+                <p id="t_goa_book">Book 14 times in last 6 hours</p>
+            </div>
+            <div id="t_goa_good">
+                <button>9.2</button>
+                <h3>Excellent</h3>
+                <p style="margin-top: -10px;"> 496 reviews</p>
+                <button id="t_goa_good1"> Show prices</button>
+            </div>
+        </div>
+
     </div>
-    <div class="footer_bottom">
+
+    <div style="height: 3000px;"></div>
+
+    <div id="footer">
         <div>
-            <a href="#">List your property</a>
+            <div>
+                <h2>Save time, save money!</h2>
+                <h3>Sign up and we'll send the best deals to you</h3>
+            </div>
+            <div class="subscription_form">
+                <div>
+                    <input type="email" placeholder="Your email">
+                </div>
+                <button>Subscribe</button>
+            </div>
+            <label class="footer_checkbox">
+                <input type="checkbox">
+                Send me a link to get the FREE Booking.com app!
+            </label>
         </div>
-        <div style="height: 0.01em; background:white; margin: 0.8em 0;"></div>
+        <div class="footer_bottom">
+            <div>
+                <a href="#">List your property</a>
+            </div>
+            <div style="height: 0.01em; background:white; margin: 0.8em 0;"></div>
+            <div>
+                <a href="#">Mobile version</a>
+                <a href="#">Your account</a>
+                <a href="#">Make changes online to your booking</a>
+                <a href="#" title='Your Reference ID is "C5DA764"'>Contact Customer Service</a>
+                <a href="#" title="Become an affiliate">Become an affiliate</a>
+                <a href="#">Booking.com for Business</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer_lists">
         <div>
-            <a href="#">Mobile version</a>
-            <a href="#">Your account</a>
-            <a href="#">Make changes online to your booking</a>
-            <a href="#" title='Your Reference ID is "C5DA764"'>Contact Customer Service</a>
-            <a href="#" title="Become an affiliate">Become an affiliate</a>
-            <a href="#">Booking.com for Business</a>
+            <ul>
+                <li><a href="#">Countries</a></li>
+                <li><a href="#">Regions</a></li>
+                <li><a href="#">Cities</a></li>
+                <li><a href="#">Districts</a></li>
+                <li><a href="#">Airports</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Places of interest</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Homes</a></li>
+                <li><a href="#">Apartments</a></li>
+                <li><a href="#">Resorts</a></li>
+                <li><a href="#">Villas</a></li>
+                <li><a href="#">Hostels</a></li>
+                <li><a href="#">B&Bs</a></li>
+                <li><a href="#">Guest houses</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Unique places to stay</a></li>
+                <li><a href="#">All destinations</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Upacked: Travel articles</a></li>
+                <li><a href="#">Travel communities</a></li>
+                <li><a href="#">Seasonal and holiday deals</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Car rental</a></li>
+                <li><a href="#">Flight finder</a></li>
+                <li><a href="#">Restaurant reservations</a></li>
+                <li><a href="#">Booking.com for Travel Agents</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Coronavirus (COVID-19) FAQs</a></li>
+                <li><a href="#">About Booking.com</a></li>
+                <li><a href="#">Contact Customer Service</a></li>
+                <li><a href="#">Partner help</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Press center</a></li>
+                <li><a href="#">Safety Resource Center</a></li>
+                <li><a href="#">Investor relations</a></li>
+                <li><a href="#">Terms & conditions</a></li>
+                <li><a href="#">Partner dispute</a></li>
+                <li><a href="#">Privacy and cookie statement</a></li>
+                <li><a href="#">Corporate contact</a></li>
+            </ul>
         </div>
     </div>
-</div>
-<div id="footer_lists">
-    <div>
-        <ul>
-            <li><a href="#">Countries</a></li>
-            <li><a href="#">Regions</a></li>
-            <li><a href="#">Cities</a></li>
-            <li><a href="#">Districts</a></li>
-            <li><a href="#">Airports</a></li>
-            <li><a href="#">Hotels</a></li>
-            <li><a href="#">Places of interest</a></li>
-        </ul>
+    <div class="footer_quote">
+        <div>
+            <p>
+                Whoever you are, whatever you're looking for, we have the perfect place for you. Our 28,085,332 listings
+                include 6,457,264 listings of homes, apartments, and other unique places to stay,
+                and are located in 153,842 destinations
+                in 225 countries and territories.
+                Booking.com B.V. is based in Amsterdam, the Netherlands and is supported internationally by <a
+                    href="#">198 offices in 70 countries.</a>
+            </p>
+        </div>
     </div>
-    <div>
-        <ul>
-            <li><a href="#">Homes</a></li>
-            <li><a href="#">Apartments</a></li>
-            <li><a href="#">Resorts</a></li>
-            <li><a href="#">Villas</a></li>
-            <li><a href="#">Hostels</a></li>
-            <li><a href="#">B&Bs</a></li>
-            <li><a href="#">Guest houses</a></li>
-        </ul>
+    <p>&#8203</p>
+    <div class="footer_login">
+        <a href="">Extranet login</a>
     </div>
-    <div>
-        <ul>
-            <li><a href="#">Unique places to stay</a></li>
-            <li><a href="#">All destinations</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Upacked: Travel articles</a></li>
-            <li><a href="#">Travel communities</a></li>
-            <li><a href="#">Seasonal and holiday deals</a></li>
-        </ul>
+    <p>&#8203</p>
+    <div class="footer_copyright">
+        <div>
+            <p>Copyright &#169 1996-2021 Booking.com&#8482. All rights reserved.</p>
+        </div>
     </div>
-    <div>
-        <ul>
-            <li><a href="#">Car rental</a></li>
-            <li><a href="#">Flight finder</a></li>
-            <li><a href="#">Restaurant reservations</a></li>
-            <li><a href="#">Booking.com for Travel Agents</a></li>
-        </ul>
+    <div class="footer_priceline_title">
+        <div>
+            <p>Booking.com is part of Booking Holidings Inc., the world leader in online travel and related services.
+            </p>
+        </div>
     </div>
-    <div>
-        <ul>
-            <li><a href="#">Coronavirus (COVID-19) FAQs</a></li>
-            <li><a href="#">About Booking.com</a></li>
-            <li><a href="#">Contact Customer Service</a></li>
-            <li><a href="#">Partner help</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Sustainability</a></li>
-            <li><a href="#">Press center</a></li>
-            <li><a href="#">Safety Resource Center</a></li>
-            <li><a href="#">Investor relations</a></li>
-            <li><a href="#">Terms & conditions</a></li>
-            <li><a href="#">Partner dispute</a></li>
-            <li><a href="#">Privacy and cookie statement</a></li>
-            <li><a href="#">Corporate contact</a></li>
-        </ul>
+    <div class="footer_priceline_images">
+        <div>
+            <img src="https://t-cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://t-cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://t-cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://t-cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://t-cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png"
+                alt="">
+        </div>
+        <div>
+            <img src="https://t-cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png"
+                alt="">
+        </div>
     </div>
-</div>
-<div class="footer_quote">
-    <div>
-        <p>
-            Whoever you are, whatever you're looking for, we have the perfect place for you. Our 28,085,332 listings
-            include 6,457,264 listings of homes, apartments, and other unique places to stay,
-            and are located in 153,842 destinations 
-            in 225 countries and territories. 
-            Booking.com B.V. is based in Amsterdam, the Netherlands and is supported internationally by <a href="#">198 offices in 70 countries.</a>
-        </p>
-    </div>
-</div>
-<p>&#8203</p>
-<div class="footer_login">
-    <a href="">Extranet login</a>
-</div>
-<p>&#8203</p>
-<div class="footer_copyright">
-    <div>
-        <p>Copyright &#169 1996-2021 Booking.com&#8482. All rights reserved.</p>
-    </div>
-</div>
-<div class="footer_priceline_title">
-    <div>
-        <p>Booking.com is part of Booking Holidings Inc., the world leader in online travel and related services.</p>
-    </div>
-</div>
-<div class="footer_priceline_images">
-    <div>
-        <img src="https://t-cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png" alt="">
-    </div>
-    <div>
-        <img src="https://t-cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png" alt="">
-    </div>
-    <div>
-        <img src="https://t-cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png" alt="">
-    </div>
-    <div>
-        <img src="https://t-cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png" alt="">
-    </div>
-    <div>
-        <img src="https://t-cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png" alt="">
-    </div>
-    <div>
-        <img src="https://t-cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png" alt="">
-    </div>
-</div>
 
     <script>
 
         const landing_accordion = document.getElementsByClassName("landing_covidInfo_accordion");
 
         for (let i = 0; i < landing_accordion.length; i++) {
-            landing_accordion[i].addEventListener("click", function() {
+            landing_accordion[i].addEventListener("click", function () {
                 this.classList.toggle("landing_covidInfo_list_active");
                 var panel = this.nextElementSibling;
                 if (panel.style.display === "block") {
-                panel.style.display = "none";
-                } 
+                    panel.style.display = "none";
+                }
                 else {
-                panel.style.display = "block";
+                    panel.style.display = "block";
                 }
             });
         }
 
-function search() {
-        var data=document.querySelector("#t_goa55").value
-        var data= data.toLowerCase()
-        window.location.href=`${data}.html`
-}
-        
-    //  <div id="t_goa_itc">
-    //      <img id="t_goa_itc_img" src="https://t-cf.bstatic.com/xdata/images/hotel/square200/163940147.webp?k=a645641232f44cefc2265b0f65215a4ed4a73aafb3e860fac39b54f6a17a8369&o="/>
-    //     <div id="t_goa_itc1">
-    //         <h2>ITC Grand Goa, a Luxury Collection Resort & <br> Spa <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-thumbs-up"></i></h2>
-    //     <p>ITC Grand Goa Resort & Spa is set within 45 acres of landscaped gardens with <br> glimmering waterways and lagoons along the pristine Arossim Beach.</p>
-    //     <p id="t_goa_book">Book 6 times in last 6 hours</p>
-    //     </div>
-    //     <div id="t_goa_good">
-    //         <button>8.4</button><h3 >Very good</h3>
-    //        <p style="margin-top: -10px;"> 486 reviews</p>
-    //        <button id="t_goa_good1"> Show prices</button>
-    //     </div>
-    // </div>
-      //  var aaa=document.querySelector('#t_goa_itc')
-        var a=document.querySelector('.t_dom1')
-        var b=document.querySelector('.t_dom2')
-        var c=document.querySelector('.t_dom3')
-        var d=document.querySelector('.t_dom4')
-        var e=document.querySelector('.t_dom5')
-        var f=document.querySelector('.t_dom6')
-        var g=document.querySelector('.t_dom7')
-        var h=document.querySelector('.t_dom8')
-        var i=document.querySelector('.t_dom9')
-        var j=document.querySelector('.t_dom10')
-       // console.log(a)
-      function highest(){
-        var a=document.querySelector('.t_dom1')
-        var b=document.querySelector('.t_dom2')
-        var c=document.querySelector('.t_dom3')
-        var d=document.querySelector('.t_dom4')
-        var e=document.querySelector('.t_dom5')
-        var f=document.querySelector('.t_dom6')
-        var g=document.querySelector('.t_dom7')
-        var h=document.querySelector('.t_dom8')
-        var i=document.querySelector('.t_dom9')
-        var j=document.querySelector('.t_dom10')
-          console.log(a,b)
-          var p=a.innerHTML 
-          var q=e.innerHTML 
-          a.innerHTML=j.innerHTML
-          j.innerHTML=i.innerHTML
-          i.innerHTML=c.innerHTML
-          c.innerHTML=b.innerHTML
-          b.innerHTML=d.innerHTML         
-          d.innerHTML=g.innerHTML
-          g.innerHTML=p
-          e.innerHTML=h.innerHTML
-          f.innerHTML=f.innerHTML          
-          h.innerHTML=q   
-         
-      }
-      function lowest(){
-        var a=document.querySelector('.t_dom1')
-        var b=document.querySelector('.t_dom2')
-        var c=document.querySelector('.t_dom3')
-        var d=document.querySelector('.t_dom4')
-        var e=document.querySelector('.t_dom5')
-        var f=document.querySelector('.t_dom6')
-        var g=document.querySelector('.t_dom7')
-        var h=document.querySelector('.t_dom8')
-        var i=document.querySelector('.t_dom9')
-        var j=document.querySelector('.t_dom10')
-          var p=a.innerHTML
-          var q=b.innerHTML
-          var r=d
-          a.innerHTML=i.innerHTML
-          i.innerHTML=d.innerHTML  
-          d.innerHTML=p
+        function search() {
+            var data = document.querySelector("#t_goa55").value
+            var data = data.toLowerCase()
+            window.location.href = `${data}.html`
+        }
 
-          b.innerHTML=c.innerHTML
-          c.innerHTML=e.innerHTML         
-          e.innerHTML=f.innerHTML         
-          f.innerHTML=h.innerHTML
-          g.innerHTML=g.innerHTML
-          h.innerHTML=q                 
-          j.innerHTML=j.innerHTML
-      }
-      function reviews(){
-        var a=document.querySelector('.t_dom1')
-        var b=document.querySelector('.t_dom2')
-        var c=document.querySelector('.t_dom3')
-        var d=document.querySelector('.t_dom4')
-        var e=document.querySelector('.t_dom5')
-        var f=document.querySelector('.t_dom6')
-        var g=document.querySelector('.t_dom7')
-        var h=document.querySelector('.t_dom8')
-        var i=document.querySelector('.t_dom9')
-        var j=document.querySelector('.t_dom10')
-          var p=a.innerHTML
-          var q=c.innerHTML
-          var r=f.innerHTML
-          a.innerHTML=d.innerHTML
-          d.innerHTML=j.innerHTML
-          j.innerHTML=i.innerHTML
-          i.innerHTML=e.innerHTML
-          e.innerHTML=p  
-          
-          b.innerHTML=b.innerHTML
-          c.innerHTML=g.innerHTML 
-          g.innerHTML=q        
-                 
-          f.innerHTML=h.innerHTML
-          
-          h.innerHTML=r                 
-         
-      }
+        var a = document.querySelector('.t_dom1')
+        var b = document.querySelector('.t_dom2')
+        var c = document.querySelector('.t_dom3')
+        var d = document.querySelector('.t_dom4')
+        var e = document.querySelector('.t_dom5')
+        var f = document.querySelector('.t_dom6')
+        var g = document.querySelector('.t_dom7')
+        var h = document.querySelector('.t_dom8')
+        var i = document.querySelector('.t_dom9')
+        var j = document.querySelector('.t_dom10')
+        // console.log(a)
+        function highest() {
+            var a = document.querySelector('.t_dom1')
+            var b = document.querySelector('.t_dom2')
+            var c = document.querySelector('.t_dom3')
+            var d = document.querySelector('.t_dom4')
+            var e = document.querySelector('.t_dom5')
+            var f = document.querySelector('.t_dom6')
+            var g = document.querySelector('.t_dom7')
+            var h = document.querySelector('.t_dom8')
+            var i = document.querySelector('.t_dom9')
+            var j = document.querySelector('.t_dom10')
+            console.log(a, b)
+            var p = a.innerHTML
+            var q = e.innerHTML
+            a.innerHTML = j.innerHTML
+            j.innerHTML = i.innerHTML
+            i.innerHTML = c.innerHTML
+            c.innerHTML = b.innerHTML
+            b.innerHTML = d.innerHTML
+            d.innerHTML = g.innerHTML
+            g.innerHTML = p
+            e.innerHTML = h.innerHTML
+            f.innerHTML = f.innerHTML
+            h.innerHTML = q
+
+        }
+        function lowest() {
+            var a = document.querySelector('.t_dom1')
+            var b = document.querySelector('.t_dom2')
+            var c = document.querySelector('.t_dom3')
+            var d = document.querySelector('.t_dom4')
+            var e = document.querySelector('.t_dom5')
+            var f = document.querySelector('.t_dom6')
+            var g = document.querySelector('.t_dom7')
+            var h = document.querySelector('.t_dom8')
+            var i = document.querySelector('.t_dom9')
+            var j = document.querySelector('.t_dom10')
+            var p = a.innerHTML
+            var q = b.innerHTML
+            var r = d
+            a.innerHTML = i.innerHTML
+            i.innerHTML = d.innerHTML
+            d.innerHTML = p
+
+            b.innerHTML = c.innerHTML
+            c.innerHTML = e.innerHTML
+            e.innerHTML = f.innerHTML
+            f.innerHTML = h.innerHTML
+            g.innerHTML = g.innerHTML
+            h.innerHTML = q
+            j.innerHTML = j.innerHTML
+        }
+        function reviews() {
+            var a = document.querySelector('.t_dom1')
+            var b = document.querySelector('.t_dom2')
+            var c = document.querySelector('.t_dom3')
+            var d = document.querySelector('.t_dom4')
+            var e = document.querySelector('.t_dom5')
+            var f = document.querySelector('.t_dom6')
+            var g = document.querySelector('.t_dom7')
+            var h = document.querySelector('.t_dom8')
+            var i = document.querySelector('.t_dom9')
+            var j = document.querySelector('.t_dom10')
+            var p = a.innerHTML
+            var q = c.innerHTML
+            var r = f.innerHTML
+            a.innerHTML = d.innerHTML
+            d.innerHTML = j.innerHTML
+            j.innerHTML = i.innerHTML
+            i.innerHTML = e.innerHTML
+            e.innerHTML = p
+
+            b.innerHTML = b.innerHTML
+            c.innerHTML = g.innerHTML
+            g.innerHTML = q
+
+            f.innerHTML = h.innerHTML
+
+            h.innerHTML = r
+
+        }
 
 
     </script>
 </body>
+
 </html>
