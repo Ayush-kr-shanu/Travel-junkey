@@ -176,13 +176,6 @@
 
                 function sign(){
                     if(ip[0].value==ip[1].value&&ip[0].value.length>9){
-
-                        // if(localStorage.getItem("password")==undefined){
-                        //     var ipPass=[]
-                        // }
-                        // else{
-                        //     var ipPass=localStorage.getItem("password");
-                        // }
                         
                         ipPass.push(ip[0].value);
                         localStorage.setItem("password",JSON.stringify(ipPass));
